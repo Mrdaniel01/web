@@ -90,7 +90,8 @@
 
 .main__introduce--title{
     grid-area: t;    
-    font-size: 2em;
+    font-size: 4em;
+    color: var(--main-color);
 }
 
 .main__introduce--img {
@@ -182,9 +183,10 @@
 }
 
 .main__contact div button:hover{ 
-    background-color: var(--main-color);
-    color: var(--dark-color);
     transform: scale(1.1);
+
+    background-color: var(--main-color);
+    color: var(--dark-color);    
     box-shadow: var(--shadow);
 }
 
