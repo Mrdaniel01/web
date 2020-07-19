@@ -6,7 +6,7 @@
     --white: white;
     --primary-font: 'Roboto', sans-serif;  
     --shadow: 5px 5px 5px  rgba(0, 0, 0, 0.2);  
-    --border: 3px dotted var(--main-color);
+    --border: 3px solid var(--main-color);
 }
 
 *{
@@ -66,7 +66,7 @@
     cursor: pointer;
 }
 .nav__header img:hover,
-.nav__header img:focus {
+.nav__header img:focus-within {
     transform: scale(1.1);
     outline: var(--border);    
 }
