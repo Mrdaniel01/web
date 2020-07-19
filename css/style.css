@@ -33,6 +33,7 @@
     width: 100%;
     height: 70px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     color: var(--white);
     background-color: var(--dark-color);
@@ -58,9 +59,9 @@
     text-decoration: underline;
 }
 
-.nav__header img {
+.nav__header a img {
     width: 40px;
-    margin-left: 10px ;
+    margin: 30% ;
     cursor: pointer;
 }
 .nav__header img:hover {
@@ -77,8 +78,7 @@
     padding: 10% 0;
     background-color: var(--main-clear);
     color: var(--second-color);
-    margin: 0 auto;
-    
+    margin: 0 auto;    
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
@@ -144,6 +144,10 @@
     color: var(--dark-color);
 }
 
+.main_hero--content div ul li{
+    margin: 10px;
+}
+
 
 /* _______________ MAIN CONTACT*/
 
@@ -189,7 +193,43 @@
     color: var(--dark-color);    
     box-shadow: var(--shadow);
 }
+/*________________ FOOTER*/
 
+footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    background-color: var(--dark-color);
+}
 
+footer a img {
+    width: 40px;
+    margin: 30% ;
+    cursor: pointer;
+}
 
+footer a img:hover{
+    transform: scale(1.1);
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 20px;
+}
+
+footer ul li a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
 

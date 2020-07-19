@@ -1,0 +1,5 @@
+.ejercicio__container{
+    display: grip;
+    grid-template-columns: 5 1fr;
+    grid-template-rows: 5 1fr;
+}
