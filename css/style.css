@@ -43,16 +43,18 @@
 .nav__header ul {
     display: flex;  
     margin: 20px;  
+    outline: none;
 }
 
 .nav__header li {
     margin: 0 20px; 
-    list-style: none;  
+    list-style: none; 
 }
 .nav__header li a{
     color: var(--white); 
     list-style: none;  
     text-decoration: none;
+    padding: 5px; 
 }
 
 .nav__header li a:hover {
@@ -60,16 +62,26 @@
     text-decoration: underline;
 }
 
-.nav__header a img {
+.nav__header a img{
     width: 40px;
-    margin: 30% ;
+    padding: 10px;
+    outline: none;
     cursor: pointer;
 }
-.nav__header img:hover,
-.nav__header img:focus-within {
+.nav__header a img:hover {
     transform: scale(1.1);
-    outline: var(--border);    
+     
 }
+
+.nav__header a:focus{
+    outline: none;
+}
+
+.nav__header a:focus-within{
+    outline: var(--border);  
+}
+ 
+
 
 
 /* ____________SECTION INTRODUCTION */
@@ -88,6 +100,11 @@
                         "l r";
     grid-gap: 20px;
     justify-items: center;
+    outline: none;
+}
+
+.main__introduce:focus{
+    outline: var(--border);
 }
 
 .main__introduce--title{
@@ -119,6 +136,11 @@
     height: 380px;    
     display: block;
     background-color: var(--white);
+    outline: none;
+}
+
+.main__hero:focus {
+    outline: var(--border);
 }
 
 .main__hero--title {
@@ -144,6 +166,11 @@
     background-color: var(--main-clear);
     box-shadow: var(--shadow);
     color: var(--dark-color);
+    outline: none;
+}
+.main_hero--content-left:focus,
+.main_hero--content-right:focus{
+    outline: var(--border   )
 }
 
 .main_hero--content div ul li{
@@ -158,6 +185,11 @@
     height: 380px;    
     display: flex;
     background-color: var(--main-clear);
+    outline: none;
+}
+
+.main__contact:focus{
+    outline: var(--border);
 }
 
 .main__contact--free,
@@ -174,6 +206,12 @@
     background-color: var(--white);
     box-shadow: var(--shadow);
     color: var(--second-color);
+    outline: none;
+}
+
+.main__contact--free:focus,
+.main__contact--coach:focus {
+    outline: var(--border);
 }
 
 .main__contact--free button,
@@ -186,7 +224,15 @@
     border: none;
     background-color: var(--second-color);
     color: var(--white);
+    outline:none;
 }
+
+.main__contact--free button:focus,
+.main__contact--coach button:focus{
+    outline:var(--border);
+}
+
+
 
 .main__contact div button:hover{ 
     transform: scale(1.1);
@@ -209,9 +255,18 @@ footer {
 
 footer a img {
     width: 40px;
-    margin: 30% ;
+    padding: 10px;
+    outline: none;
     cursor: pointer;
 }
+footer a:focus{
+    outline: none;
+}  
+
+footer a:focus-within{
+    outline: var(--border);  
+}
+
 
 footer a img:hover{
     transform: scale(1.1);
@@ -229,7 +284,14 @@ footer ul li {
 footer ul li a{
     color: var(--white);
     text-decoration: none;
+    outline: none;
+    padding: 5px;
 }
+
+footer ul li a:focus{
+    outline: var(--border);
+}
+
 
 footer ul li a:hover{
     text-decoration: underline;
